@@ -1,0 +1,73 @@
+
+
+
+.main{
+    width:100%;
+    height:340px;
+    background: url('images\ \(3\).jpg');
+    background-size: cover;
+    position: relative;
+    top: 150px;
+    overflow: hidden; 
+    background-position: 0px; 
+    animation: bgmove 16s linear infinite;
+    
+}
+
+
+   @keyframes bgmove{
+    0%
+      {background-position:0px;}
+
+   100%
+     {background-position:5000px;}
+}   
+.car{
+    position: absolute;
+    top: 200px;
+    right: 0%;
+
+    width: 300px;
+    height: 140px;
+    background: url('download-removebg-preview.png') no-repeat;
+    animation: car 10s infinite linear;
+}
+   @keyframes car {
+    0%{
+        right: -10%;
+    }
+    100%{
+        right: 100%;
+    }
+}   
+.tyre{
+    background: rgb(16, 14, 12);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: tyre 5s infinite linear;
+    }
+    @keyframes tyre {
+        0%{transform: rotate(360deg);}
+        100%{transform: rotate(0deg);}
+
+    }
+.left{
+   position: absolute;
+   top: 59%;
+   left: 8.8%;
+    }
+.right{
+ position: absolute;
+left: 68%;
+top: 59%;
+ }
+ .ring{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px silver dotted;
+    position: absolute;
+    top: 18%;
+    left: 15%;
+ }
